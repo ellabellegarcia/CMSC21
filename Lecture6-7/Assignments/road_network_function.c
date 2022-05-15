@@ -16,7 +16,7 @@ void printMatrix(char station[MAT_SIZE][MAT_SIZE], bool mat[MAT_SIZE][MAT_SIZE])
 	}
 }
 
-// Function for Printing the points/location
+// Function for printing the points/location
 void printPoints(char *point[MAT_SIZE],bool mat[MAT_SIZE][MAT_SIZE]){
     printf("Which point are you located? 0 - A, 1 - B, 2 - C, 3 - D, 4 - E, 5 - F, 6 - G, 7 - H \n>>> ");
     scanf ("%d", &location);
