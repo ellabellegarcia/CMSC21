@@ -1,13 +1,13 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-
 #define MAT_SIZE 8
 int i, j, location;
 
 // Function for printing the matrix
 void printMatrix(char station[MAT_SIZE][MAT_SIZE], bool mat[MAT_SIZE][MAT_SIZE])
 {
+    printf("\tA\tB\t[C]\t[D]\tE\tF\tG\tH\n");
     for (i = 0; i < MAT_SIZE ; i++) {
         printf("%s", station[i]);
         for (j = 0; j < MAT_SIZE ; j++)
@@ -74,7 +74,6 @@ void printPoints(char *point[MAT_SIZE],bool mat[MAT_SIZE][MAT_SIZE]){
 // Driver Code
 int main()
 {
-    printf("\tA\tB\t[C]\t[D]\tE\tF\tG\tH\n");
     char *point[] = {"A", "B", "C", "D", "E", "F", "G", "H"};
     char station[MAT_SIZE][MAT_SIZE] = {{"A  "}, {"B  "}, {"[C]"}, {"[D]"}, {"E  "}, {"F  "}, {"G  "}, {"H  "}};
 	bool road_networks[MAT_SIZE][MAT_SIZE] = {  
