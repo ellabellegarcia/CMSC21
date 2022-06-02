@@ -31,7 +31,7 @@ float solveDistance(struct Point p1, struct Point p2) {
 
 // y = mx + b
 // b = y - mx
-void getSlopeInterceptForm(struct Point p1, struct Point p2 , float m){
+void getSlopeInterceptForm(struct Point p1, struct Point p2 , float m) {
     float y_intercept = p2.y - (m*p2.x);
     printf("\ny = %.2fx + (%.2f)\n", m, y_intercept);
 }
